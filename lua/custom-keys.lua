@@ -1,0 +1,28 @@
+local map = vim.api.nvim_set_keymap
+local builtin = require('telescope.builtin')
+local actions = require('telescope.actions')
+
+require('telescope').setup({
+  defaults = {
+    mappings = {
+      i = {
+        ['<esc>'] = actions.close
+      }
+    }
+  }
+})
+
+map('n', '<leader>gf', ':Telescope git_files<CR>', {})
+map('n', '<leader><Space>', ':Telescope find_files<CR>', {})
+map('n', '<leader>/', ':Telescope live_grep<CR>', {})
+map('n', '<leader>bi', ':Telescope buffers<CR>', {})
+map('n', '<leader>:', ':Telescope commands<CR>', {})
+map('n', '<leader>op', ':NvimTreeToggle<CR>', { noremap = true }) 
+map('n', '<leader>wj', '<C-W><C-J>', { noremap = true })
+map('n', '<leader>wk', '<C-W><C-K>', { noremap = true })
+map('n', '<leader>wl', '<C-W><C-L>', { noremap = true })
+map('n', '<leader>wh', '<C-W><C-H>', { noremap = true })
+map('n', '<leader>wv', ':vsplit<CR>', { noremap = true })
+map('n', '<leader>ws', ':split<CR>', { noremap = true })
+map('n', '<leader>gg', ':Neogit<CR>', { noremap = true })
+map('n', '<leader>pf', ':Prettier<CR>', { noremap = true })
