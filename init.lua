@@ -6,6 +6,7 @@ g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
 
 require('plugins')
+require('telescope-settings')
 require('code-completion')
 require('file-explorer')
 require('custom-keys')

@@ -1,16 +1,4 @@
 local map = vim.api.nvim_set_keymap
-local builtin = require('telescope.builtin')
-local actions = require('telescope.actions')
-
-require('telescope').setup({
-  defaults = {
-    mappings = {
-      i = {
-        ['<esc>'] = actions.close
-      }
-    }
-  }
-})
 
 map('n', '<leader>gf', ':Telescope git_files<CR>', {})
 map('n', '<leader><Space>', ':Telescope find_files<CR>', {})
