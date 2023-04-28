@@ -1,16 +1,20 @@
 require('lualine').setup({
   options = {
-    theme = 'dracula-nvim',
-    disabled_filetypes = { 'packer', 'NvimTree' }
+    theme = 'catppuccin',
+    disabled_filetypes = { 'packer', 'NvimTree' },
+    component_separators = '',
+    section_separators = '',
   }
 })
 require('colorizer').setup()
 
-require('indent_blankline').setup({
-  space_char_blankline = " ",
-  char_highlight_list = {
-    'IndentBlanklineIndent'
+require('catppuccin').setup({
+  flavour = 'macchiato',
+  transparent_background = true,
+  indent_blankline = {
+    enabled = true,
+    colored_indent_levels = true
   }
 })
 
-vim.cmd [[highlight IndentBlanklineIndent guifg=#44475a gui=nocombine]]
+vim.cmd.colorscheme "catppuccin-macchiato"

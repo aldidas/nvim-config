@@ -56,6 +56,10 @@ require('lazy').setup({
       'nvim-lua/plenary.nvim' 
     }
 	},
+  {
+    'catppuccin/nvim',
+    name = 'catppuccin'
+  },
 	{
 		'nvim-lualine/lualine.nvim',
 		dependencies = { 
