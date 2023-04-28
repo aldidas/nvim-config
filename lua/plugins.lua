@@ -37,12 +37,6 @@ require('lazy').setup({
     version = '*',
     event = 'VeryLazy'
   },
-  {
-    'Mofiqul/dracula.nvim',
-    config = function()
-      vim.cmd.colorscheme 'dracula'
-    end
-  },
 	{
 		'nvim-treesitter/nvim-treesitter',
     config = function()
@@ -79,5 +73,5 @@ require('lazy').setup({
     }
   },
   'norcalli/nvim-colorizer.lua',
-  'xiyaowong/transparent.nvim'
+  'xiyaowong/transparent.nvim',
 })

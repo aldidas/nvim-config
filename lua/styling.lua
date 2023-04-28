@@ -2,10 +2,9 @@ require('lualine').setup({
   options = {
     theme = 'catppuccin',
     disabled_filetypes = { 'packer', 'NvimTree' },
-    component_separators = '',
-    section_separators = '',
   }
 })
+
 require('colorizer').setup()
 
 require('catppuccin').setup({

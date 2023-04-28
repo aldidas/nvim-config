@@ -26,7 +26,6 @@ opt.swapfile = true
 opt.splitright = true
 opt.splitbelow = true
 opt.signcolumn = 'yes'
-opt.termguicolors = true
 
 cmd[[filetype off]]
 
