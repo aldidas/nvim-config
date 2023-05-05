@@ -74,4 +74,10 @@ require('lazy').setup({
   },
   'norcalli/nvim-colorizer.lua',
   'xiyaowong/transparent.nvim',
+  {
+    'nvim-pack/nvim-spectre',
+    dependencies = {
+      'nvim-lua/plenary.nvim'
+    }
+  }
 })

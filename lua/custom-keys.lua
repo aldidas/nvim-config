@@ -15,3 +15,9 @@ map('n', '<leader>ws', ':split<CR>', { noremap = true })
 map('n', '<leader>gg', ':Neogit<CR>', { noremap = true })
 map('n', '<leader>pf', ':Prettier<CR>', { noremap = true })
 map('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true })
+map('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', {
+  desc = 'Search current word'
+})
+map('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', {
+  desc = 'Search current word'
+})
