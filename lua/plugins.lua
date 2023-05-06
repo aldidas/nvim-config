@@ -79,5 +79,6 @@ require('lazy').setup {
     dependencies = {
       'nvim-lua/plenary.nvim'
     }
-  }
+  },
+  'terrortylor/nvim-comment'
 }
