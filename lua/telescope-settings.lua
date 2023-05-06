@@ -1,5 +1,4 @@
 local api = vim.api
-local builtin = require('telescope.builtin')
 local actions = require('telescope.actions')
 local colors = require("catppuccin.palettes").get_palette "macchiato"
 

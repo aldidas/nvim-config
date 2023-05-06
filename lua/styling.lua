@@ -24,10 +24,10 @@ require('lualine').setup({
     disabled_filetypes = { 'NvimTree' },
   },
   sections = {
-    lualine_a = { 
-      { 
-        'mode', 
-        fmt = function(s) return mode_map[s] or s end 
+    lualine_a = {
+      {
+        'mode',
+        fmt = function(s) return mode_map[s] or s end
       }
     }
   }
