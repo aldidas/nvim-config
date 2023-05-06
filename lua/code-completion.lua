@@ -2,7 +2,7 @@ vim.opt.completeopt = { 'menuone', 'noselect', 'noinsert', 'preview' }
 vim.opt.shortmess = vim.opt.shortmess + { c = true }
 
 local cmp = require('cmp')
-cmp.setup({
+cmp.setup {
 	snippet = {
 		expand = function(args)
 			vim.fn["vsnip#anonymous"](args.body)
@@ -45,14 +45,14 @@ cmp.setup({
 			return item
 		end
 	}
-})
+}
 
-require('prettier').setup({
+require('prettier').setup {
   bin = 'prettier', -- or `'prettierd'` (v0.23.3+)
-})
+}
 
-require('mason').setup()
-require('mason-lspconfig').setup()
+require('mason').setup {}
+require('mason-lspconfig').setup {}
 
 -- local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local lsp_config = require('lspconfig')
@@ -83,6 +83,6 @@ lsp_config.lua_ls.setup {
   }
 }
 
-require('nvim-autopairs').setup()
-require('nvim-surround').setup()
+require('nvim-autopairs').setup {}
+require('nvim-surround').setup {}
 

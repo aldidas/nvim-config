@@ -2,7 +2,7 @@ local api = vim.api
 local actions = require('telescope.actions')
 local colors = require("catppuccin.palettes").get_palette "macchiato"
 
-require('telescope').setup({
+require('telescope').setup {
   defaults = {
     mappings = {
       i = {
@@ -10,7 +10,7 @@ require('telescope').setup({
       }
     }
   }
-})
+}
 
 local TelescopeColors = {
   TelescopePromptBorder = { fg = colors.crust, bg = colors.crust },

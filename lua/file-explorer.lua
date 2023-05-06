@@ -72,13 +72,13 @@ local function on_attach(bufnr)
 
 end
 
-require('nvim-tree').setup({
+require('nvim-tree').setup {
   on_attach = on_attach,
   view = {
     width = 30,
     number = false,
     relativenumber = false,
   }
-})
+}
 
 vim.cmd[[hi NvimTreeNormal guibg=NONE ctermbg=NONE]]

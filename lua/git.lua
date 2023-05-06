@@ -1,5 +1,5 @@
-require('neogit').setup({
+require('neogit').setup {
   use_magit_keybindings = true
-})
+}
 
-require('gitsigns').setup()
+require('gitsigns').setup {}
