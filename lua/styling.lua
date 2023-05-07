@@ -37,10 +37,15 @@ require('colorizer').setup {}
 
 require('catppuccin').setup {
   flavour = 'macchiato',
-  transparent_background = true,
+  --transparent_background = true,
   indent_blankline = {
     enabled = true,
     colored_indent_levels = true
+  },
+  integrations = {
+    nvimtree = {
+      transparent_panel = true
+    }
   }
 }
 

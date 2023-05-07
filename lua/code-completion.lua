@@ -54,19 +54,35 @@ require('prettier').setup {
 require('mason').setup {}
 require('mason-lspconfig').setup {}
 
--- local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local lsp_config = require('lspconfig')
 lsp_config.tsserver.setup {
   filetypes = { 'javascript', 'typescript', 'typescriptreact', 'typescript.tsx' },
   root_dir = function () return vim.loop.cwd() end
 }
-lsp_config.tailwindcss.setup {}
+lsp_config.tailwindcss.setup {
+  capabilities = capabilities
+}
 lsp_config.intelephense.setup {}
 lsp_config.pyright.setup {}
-lsp_config.html.setup {}
-lsp_config.cssls.setup {}
-lsp_config.svelte.setup {}
-lsp_config.volar.setup {}
+lsp_config.html.setup {
+  capabilities = capabilities
+}
+lsp_config.cssls.setup {
+  capabilities = capabilities
+}
+lsp_config.jsonls.setup {
+  capabilities = capabilities
+}
+lsp_config.svelte.setup {
+  capabilities = capabilities
+}
+lsp_config.astro.setup {
+  capabilities = capabilities
+}
+lsp_config.volar.setup {
+  capabilities = capabilities
+}
 lsp_config.lua_ls.setup {
   settings = {
     Lua = {
