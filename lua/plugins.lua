@@ -32,6 +32,8 @@ require('lazy').setup {
   'MunifTanjim/prettier.nvim',
   'lukas-reineke/indent-blankline.nvim',
   'windwp/nvim-autopairs',
+  'tjdevries/colorbuddy.nvim',
+  'bbenzikry/snazzybuddy.nvim',
   {
     'kylechui/nvim-surround',
     version = '*',
@@ -44,20 +46,16 @@ require('lazy').setup {
     end
 	},
 	{
-		'nvim-telescope/telescope.nvim', 
+		'nvim-telescope/telescope.nvim',
     tag = '0.1.1',
-    dependencies = { 
-      'nvim-lua/plenary.nvim' 
+    dependencies = {
+      'nvim-lua/plenary.nvim'
     }
 	},
-  {
-    'catppuccin/nvim',
-    name = 'catppuccin'
-  },
 	{
 		'nvim-lualine/lualine.nvim',
-		dependencies = { 
-      'nvim-tree/nvim-web-devicons', 
+		dependencies = {
+      'nvim-tree/nvim-web-devicons',
     }
 	},
   {

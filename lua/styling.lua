@@ -20,7 +20,6 @@ local mode_map = {
 
 require('lualine').setup {
   options = {
-    theme = 'catppuccin',
     disabled_filetypes = { 'NvimTree' },
   },
   sections = {
@@ -35,18 +34,14 @@ require('lualine').setup {
 
 require('colorizer').setup {}
 
-require('catppuccin').setup {
-  flavour = 'macchiato',
-  --transparent_background = true,
-  indent_blankline = {
-    enabled = true,
-    colored_indent_levels = true
-  },
-  integrations = {
-    nvimtree = {
-      transparent_panel = true
-    }
+vim.cmd [[highlight IndentBlankLineIndent guifg=#43454f gui=nocombine]]
+require('indent_blankline').setup {
+  space_char_blankline = " ",
+  char_highlight_list = {
+    'IndentBlankLineIndent'
   }
 }
 
-vim.cmd.colorscheme "catppuccin-macchiato"
+require('colorbuddy').colorscheme('snazzybuddy')
+
+ vim.cmd.colorscheme "snazzybuddy"
