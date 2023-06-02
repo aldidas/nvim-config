@@ -13,9 +13,10 @@ require('telescope').setup {
 
 local colors = {
   fg = '#e2e4e5',
-  dark = '#43454f',
-  darker = '#34353e',
-  darkest = '#282a36'
+  dark = '#26233a',
+  darker = '#1f1d2e',
+  darkest = '#191724',
+  border = '#6e6a86'
 }
 
 local FloatColors = {

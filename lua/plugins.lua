@@ -15,6 +15,7 @@ require('lazy').setup {
 	'williamboman/mason.nvim',
 	'williamboman/mason-lspconfig.nvim',
 	'neovim/nvim-lspconfig',
+  'jose-elias-alvarez/null-ls.nvim',
 	'hrsh7th/nvim-cmp',
 	'hrsh7th/cmp-nvim-lsp',
 	'hrsh7th/cmp-nvim-lua',
@@ -28,7 +29,6 @@ require('lazy').setup {
   'nvim-lua/lsp-status.nvim',
   'gpanders/editorconfig.nvim',
   'nathom/filetype.nvim',
-  'jose-elias-alvarez/null-ls.nvim',
   'MunifTanjim/prettier.nvim',
   'lukas-reineke/indent-blankline.nvim',
   'windwp/nvim-autopairs',
@@ -78,5 +78,11 @@ require('lazy').setup {
       'nvim-lua/plenary.nvim'
     }
   },
-  'terrortylor/nvim-comment'
+  'terrortylor/nvim-comment',
+  { 'rose-pine/neovim', name = 'rose-pine' },
+  {
+    "danymat/neogen",
+    dependencies = "nvim-treesitter/nvim-treesitter",
+    config = true
+  }
 }

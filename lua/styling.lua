@@ -42,6 +42,9 @@ require('indent_blankline').setup {
   }
 }
 
-require('colorbuddy').colorscheme('snazzybuddy')
+-- require('colorbuddy').colorscheme('snazzybuddy')
+require('rose-pine').setup {
+  variant = 'moon'
+}
 
- vim.cmd.colorscheme "snazzybuddy"
+vim.cmd.colorscheme "rose-pine"
